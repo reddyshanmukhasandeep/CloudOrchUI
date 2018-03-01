@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cts.cde.io.cloudorchestrator.appdetails.AppDetailsControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.692 sec - in com.cts.cde.io.cloudorchestrator.appdetails.AppDetailsControllerTest

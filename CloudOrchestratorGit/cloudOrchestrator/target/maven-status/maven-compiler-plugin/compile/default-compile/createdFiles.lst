@@ -1,0 +1,5 @@
+com\cts\cde\io\cloudorchestrator\appdetails\AppDetails.class
+com\cts\cde\io\cloudorchestrator\appdetails\AppDetailsRepository.class
+com\cts\cde\io\cloudorchestrator\CloudOrchestratorApplication.class
+com\cts\cde\io\cloudorchestrator\appdetails\AppDetailsController.class
+com\cts\cde\io\cloudorchestrator\appdetails\AppDetailsService.class
