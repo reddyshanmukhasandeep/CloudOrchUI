@@ -1,0 +1,66 @@
+ <div class="container" style="padding-top:20px; font-family: fantasy;">
+  <h4>{{title}}</h4>
+ </div>
+<div class="container" >
+   <table class="table table-hover table-bordered ">
+      <thead class="thead-dark" >
+        <tr>
+          <th>
+            SNo.
+          </th>
+          <th>
+            App Name
+          </th>
+           <th>
+             Org Name
+           </th>
+           <th>
+             Space Name
+           </th>
+          <th>
+            Exception Type
+          </th>
+
+          <th>
+            Time
+          </th>
+           <th>
+             Message
+           </th>
+        </tr>
+      </thead>
+        <tbody>
+           <tr *ngFor="let details of appdetailList | paginate: { itemsPerPage: 10, currentPage: p } ;let i=index">
+             <td>
+               {{10*(p-1) + i +1}}
+             </td>
+             <td>
+              <a [routerLink]="[ details.id]"  target="blank">{{details.appName}}</a> 
+             </td>
+              <td>
+                {{details.orgName}}
+              </td>
+
+              <td>
+                  {{details.spaceName}}
+              </td>
+             <td>
+               {{details.exceptionType}}
+             </td>
+             <td>
+               {{details.timestamp|date:'yyyy-MM-dd HH:mm a z'}}
+             </td>
+             <td>
+               {{details.message}}
+             </td>
+
+           </tr>
+        </tbody>
+
+   </table>
+     <div class="pagination">
+              <pagination-controls (pageChange)="p = $event" autoHide="true"  maxSize="10" ></pagination-controls>
+            </div>
+
+
+</div>

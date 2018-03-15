@@ -1,0 +1,22 @@
+span{
+    font-weight :bold
+}
+
+
+.table th {
+    text-align: center;
+  
+  
+ }
+
+ .table td {
+  
+   text-align: justify;  
+   /* word-break:inherit */
+   
+ }
+.time{
+    padding-left: 50px;
+    padding-right: 79px;
+
+}

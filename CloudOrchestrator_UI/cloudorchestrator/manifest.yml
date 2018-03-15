@@ -1,0 +1,8 @@
+---
+applications:
+- name: cloudorchestratoruidev
+  memory: 512M
+  buildpack: staticfile_buildpack
+  path: ./dist
+  instances: 1
+  
